@@ -1,13 +1,23 @@
+import { RepositoryItem } from "./RepositoryItem";
+
+const repository = {
+    name: "Uniform 1",
+    description: "Form in React",
+    link: "https://github.com/emimuniz/CursoReactRockeseat"
+
+}
+
 export function RepositoryList() {
     return (
         <section className="repository-list">
             <h1>Lista de repositórios</h1>
             <ul>
-                <li>
-                    <strong>Unform</strong>
-                    <p>Forms in React</p>
-                    <a href="">Acessar repositorio</a>
-                </li>
+                {/* <RepositoryItem repository={repository}/> */}
+                <RepositoryItem 
+                    repository="Uniform 1" 
+                    description= "Forms in React" 
+                    link="https://github.com/emimuniz/CursoReactRockeseat"/>
+                <RepositoryItem/>
             </ul>
         </section>
     )
